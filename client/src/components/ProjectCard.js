@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Col } from 'react-bootstrap'
 import Modal from './Modal'
 
-export const ProjectCard = ({ title, description, imgUrl, allImg, repoLink }) => {
+export const ProjectCard = ({ title, description, imgUrl, allImg, imgDesktop, imgMobile, repoLink }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -19,7 +19,12 @@ export const ProjectCard = ({ title, description, imgUrl, allImg, repoLink }) =>
                 <span>{description}</span><br/>
                 {repoLink && <a style={{color:'white'}} href={repoLink}>GitHub Link</a>}
                 <br/>
-                <div>
+                <div className='modalimg'>
+                  <img className='modalimg-mobile' src={imgMobile} alt=''/>
+                  <img className='modalimg-desktop' src={imgDesktop} alt=''/>
+                </div>
+
+                {/* <div>
                   {allImg && allImg.map((image) => {
                       console.log(image)
                       return (
@@ -29,8 +34,7 @@ export const ProjectCard = ({ title, description, imgUrl, allImg, repoLink }) =>
                         </>
                       )
                     })}
-
-                </div>
+                </div> */}
               </Modal>
           </div>
         </div>

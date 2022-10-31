@@ -22,10 +22,10 @@ export const Footer = () => {
              </Col>
              <Col sm={6} className="text-center text-sm-end">
                 <div className='social-icon'>
-                  <a href='https://github.com/DylanP97?tab=repositories'><img src={GitHubIcon} alt="" /></a>
-                  <a href='https://wa.me/+33788485314'><img src={WhatsappIcon} alt="" /></a>
-                  <a href='mailto:dylan.pinheiro.1997@gmail.com'><img src={EmailIcon} alt="" /></a>
-                  <a href='https://www.linkedin.com/in/dylan-pinheiro-idy/'><img src={LinkedinIcon} alt="" /></a>
+                  <a href='https://github.com/DylanP97?tab=repositories' className='github'><img src={GitHubIcon} alt="" /></a>
+                  <a href='https://wa.me/+33788485314' className='whatsapp'><img src={WhatsappIcon} alt="" /></a>
+                  <a href='mailto:dylan.pinheiro.1997@gmail.com' className='email-icon'><img src={EmailIcon} alt="" /></a>
+                  <a href='https://www.linkedin.com/in/dylan-pinheiro-idy/' className='linkedin'><img src={LinkedinIcon} alt="" /></a>
                 </div>
                 <p>CopyRight 2022. All Right Reserved</p>
              </Col>

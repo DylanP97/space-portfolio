@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ReactDom from 'react-dom'
 
 
@@ -10,8 +10,8 @@ export default function Modal({ open, children, onClose }) {
     <>
         <div className='overlay-style'></div>
         <div className='modal-styles'>
+          <button onClick={onClose}>Close Project</button>
             {children}
-            <button onClick={onClose}>Close Modal</button>
         </div>
     </>,
     document.getElementById('portal')

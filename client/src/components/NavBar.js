@@ -35,7 +35,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
         <Navbar.Brand href="#home">
-            <img src={dylanLogo} alt="Logo" />
+            <img src={dylanLogo} alt="Logo" className='dylan-logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className='navbar-toggler-icon'></span>
@@ -49,10 +49,10 @@ export const NavBar = () => {
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
-                    <a href='https://github.com/DylanP97?tab=repositories'><img src={GitHubIcon} alt="" /></a>
-                    <a href='https://wa.me/+33788485314'><img src={WhatsappIcon} alt="" /></a>
-                    <a href='mailto:dylan.pinheiro.1997@gmail.com'><img src={EmailIcon} alt="" /></a>
-                    <a href='https://www.linkedin.com/in/dylan-pinheiro-idy/'><img src={LinkedinIcon} alt="" /></a>
+                    <a className="github" href='https://github.com/DylanP97?tab=repositories'><img src={GitHubIcon} alt="" /></a>
+                    <a className="whatsapp" href='https://wa.me/+33788485314'><img src={WhatsappIcon} alt="" /></a>
+                    <a className="email-icon" href='mailto:dylan.pinheiro.1997@gmail.com'><img src={EmailIcon} alt="" /></a>
+                    <a className="linkedin" href='https://www.linkedin.com/in/dylan-pinheiro-idy/'><img src={LinkedinIcon} alt="" /></a>
                 </div>
                 <button className='vvd' onClick={() => (window.location.href="#contact")}><span>Let's Connect</span></button>
             </span>
