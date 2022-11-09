@@ -384,9 +384,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .item{
   display: block;
 }
-.item h5{
-  display: block
-}
 .flip-box {
   position: relative;
   transform-style: preserve-3d;
@@ -394,10 +391,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: ;
-  margin: 0 auto 15px auto;
+  justify-content: center;
+  height: 200px;
 }
 .flip-box img {
+  padding: 5%;
   position: absolute;
   backface-visibility: hidden;
   transition: 1s;

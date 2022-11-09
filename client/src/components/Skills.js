@@ -17,7 +17,7 @@ import e70 from "../assets/img/70file.svg";
 import e74 from "../assets/img/74file.svg";
 import e75 from "../assets/img/75file.svg";
 // import e79 from "../assets/img/79file.svg";
-// import e80 from "../assets/img/80file.svg";
+import e80 from "../assets/img/80file.svg";
 import e90 from "../assets/img/90file.svg";
 import e93 from "../assets/img/93file.svg";
 // import e96 from "../assets/img/96file.svg";
@@ -28,12 +28,17 @@ import colorSharp from "../assets/img/color-sharp.png";
 import javascripticon from "../assets/logos/javascripticon.png"
 import mongodbicon from "../assets/logos/mongodbicon.svg"
 import bootstrapicon from "../assets/logos/bootstrapicon.png"
-import nodejs from "../assets/logos/nodejs.png"
+import nodejsicon from "../assets/logos/nodejsicon.png"
 import reacticon from "../assets/logos/reacticon.png"
-import react from "../assets/logos/react.png"
 import figmaicon from "../assets/logos/figmaicon.svg"
 import sanityicon from "../assets/logos/sanityicon.png"
-import nextjsicon from "../assets/logos/nextjsicon.png"
+import nextjsiconb from "../assets/logos/nextjsiconb.png"
+import mysqlicon from "../assets/logos/mysqlicon.png"
+import giticon from "../assets/logos/giticon.png"
+import phpicon from "../assets/logos/phpicon.png"
+import liquidicon from "../assets/logos/liquidicon.png"
+import shopifyicon from "../assets/logos/shopifyicon.png"
+
 
 
 export const Skills = () => {
@@ -67,76 +72,123 @@ export const Skills = () => {
                         <p>Here is a set of skills I have. The good news is that those numbers are very likely to increase in a near future!</p>
                         <Carousel draggable={true} autoPlaySpeed={1500} autoPlay={false} responsive={responsive} infinite={true} className="skill-slider">
                             <div className='item'>
-                                <img src={e65} alt="meter1" />
                                 <h5>JavaScript</h5>
-                            </div>
-                            <div className='item'>
-                                <img src={e70} alt="meter2" />
-                                <h5>CSS / SCSS / Bootstrap</h5>
-                            </div>
-                            <div className='item'>
-                                <img src={e65} alt="meter3" />
-                                <h5>React.js</h5>
-                            </div>
-                            <div className='item'>
-                                <img src={e33} alt="meter3" />
-                                <img src={nextjsicon} alt="meter3"/>
-                                <h5>Next.js</h5>
-                            </div>
-                            <div className='item'>
                                 <div className='flip-box'>
-                                    <img src={e35} alt="meter3" />
+                                    <img src={e65} alt="meter1" />
+                                    <img src={javascripticon} alt="meter3"/>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <h5>CSS / SCSS / Bootstrap</h5>
+                                <div className='flip-box'>
+                                    <img src={e70} alt="meter2" />
+                                    <img src={bootstrapicon} alt="meter3"/>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <h5>React.js</h5>
+                                <div className='flip-box'>
+                                    <img src={e65} alt="meter3" />
+                                    <img src={reacticon} alt="meter3"/>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <h5>Next.js</h5>
+                                <div className='flip-box'>
+                                    <img src={e33} alt="meter3" />
+                                    <img src={nextjsiconb} alt="meter3"/>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <h5>Sanity.io</h5>
+                                <div className='flip-box'>
+                                    <img src={e50} alt="meter3" />
                                     <img src={sanityicon} alt="meter3"/>
                                 </div>
-                                <h5>Sanity.io</h5>
                             </div>
                             <div className='item'>
-                                <img src={e55} alt="meter4" />
                                 <h5>Node.js</h5>
+                                <div className='flip-box'>
+                                    <img src={e55} alt="meter4" />
+                                    <img src={nodejsicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e60} alt="meter4" />
-                                <h5>RestAPI</h5>
+                                <h5>SQL</h5>
+                                <div className='flip-box'>
+                                    <img src={e60} alt="meter4" />
+                                    <img src={mysqlicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e45} alt="meter4" />
-                                <h5>SQL / MongoDB</h5>
+                                <h5>MongoDB</h5>
+                                <div className='flip-box'>
+                                    <img src={e80} alt="meter4" />
+                                    <img src={mongodbicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e40} alt="meter4" />
                                 <h5>Git / GitHub</h5>
+                                <div className='flip-box'>
+                                    <img src={e40} alt="meter4" />
+                                    <img src={giticon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e30} alt="meter4" />
                                 <h5>PHP</h5>
+                                <div className='flip-box'>
+                                    <img src={e30} alt="meter4" />
+                                    <img src={phpicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e50} alt="meter4" />
                                 <h5>Shopify Liquid</h5>
+                                <div className='flip-box'>
+                                    <img src={e50} alt="meter4" />
+                                    <img src={liquidicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e90} alt="meter4" />
                                 <h5>Shopify</h5>
+                                <div className='flip-box'>
+                                    <img src={e90} alt="meter4" />
+                                    <img src={shopifyicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e75} alt="meter4" />
                                 <h5>Google Ads</h5>
+                                <div className='flip-box'>
+                                    <img src={e75} alt="meter4" />
+                                    <img src={shopifyicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e74} alt="meter4" />
                                 <h5>Facebook Ads</h5>
+                                <div className='flip-box'>
+                                    <img src={e74} alt="meter4" />
+                                    <img src={shopifyicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e45} alt="meter4" />
                                 <h5>SEO</h5>
+                                <div className='flip-box'>
+                                    <img src={e45} alt="meter4" />
+                                    <img src={shopifyicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e70} alt="meter4" />
                                 <h5>Illustrator</h5>
+                                <div className='flip-box'>
+                                    <img src={e70} alt="meter4" />
+                                    <img src={shopifyicon} alt="meter3"/>
+                                </div>
                             </div>
                             <div className='item'>
-                                <img src={e93} alt="meter4" />
                                 <h5>English</h5>
+                                <div className='flip-box'>
+                                    <img src={e93} alt="meter4" />
+                                    <img src={shopifyicon} alt="meter3"/>
+                                </div>
                             </div>
                         </Carousel>
                     </div>
