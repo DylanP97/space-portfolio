@@ -10,7 +10,7 @@ export default function Modal({ open, children, onClose }) {
     <>
         <div className='overlay-style'></div>
         <div className='modal-styles'>
-          <button onClick={onClose}>Close Project</button>
+          <button className='btn-white close-modal' onClick={onClose}>Close Project</button>
             {children}
         </div>
     </>,

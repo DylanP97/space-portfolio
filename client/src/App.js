@@ -7,19 +7,23 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { AboutMe } from './components/AboutMe';
+import ProgressBar from 'react-progressbar-on-scroll'
 
 function App() {
 
   return (
-    <div id='App' className="App">
-      <NavBar/>
-      <Banner/>
-      <Skills/>
-      <Projects/>
-      <AboutMe/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <>
+      <ProgressBar height={10} color='#4A2FBD' position='bottom' gradient={true} gradientColor="violet" />
+      <div id='App' className="App">
+        <NavBar/>
+        <Banner/>
+        <Skills/>
+        <Projects/>
+        <AboutMe/>
+        <Contact/>
+        <Footer/>
+      </div>
+    </>
   );
 }
 

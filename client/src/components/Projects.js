@@ -4,19 +4,18 @@ import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
-// projects images
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import Booki_desktop from "../assets/projects/Booki_desktop.png"
-import Booki_mobile from "../assets/projects/Booki_mobile.png"
+// banner
+import OpenClassrooms from "../assets/logos/openclassrooms.png";
+import JavaScript from "../assets/logos/javascript.png";
+import Coding from "../assets/logos/codingimg.jpg"
+
+// projects
+import Booki_0_desktop from "../assets/projects/Booki_0_desktop.png"
+import Booki_0_mobile from "../assets/projects/Booki_0_mobile.png"
 import OhMyFood_desktop from "../assets/projects/OhMyFood_desktop.png"
 import OhMyFood_mobile from "../assets/projects/OhMyFood_mobile.png"
 import OhMyFood_menu_desktop from "../assets/projects/OhMyFood_menu_desktop.png"
 import OhMyFood_menu_mobile from "../assets/projects/OhMyFood_menu_mobile.png"
-import SpiritualAnimal_0_desktop from "../assets/projects/SpiritualAnimal_0_desktop.png"
-import SpiritualAnimal_1_desktop from "../assets/projects/SpiritualAnimal_1_desktop.png"
-import SpiritualAnimal_2_desktop from "../assets/projects/SpiritualAnimal_2_desktop.png"
 import Groupomania_0_desktop from "../assets/projects/Groupomania_0_desktop.png"
 import Groupomania_1_desktop from "../assets/projects/Groupomania_1_desktop.png"
 import Groupomania_2_desktop from "../assets/projects/Groupomania_2_desktop.png"
@@ -25,6 +24,15 @@ import Groupomania_0_mobile from "../assets/projects/Groupomania_0_mobile.png"
 import Groupomania_1_mobile from "../assets/projects/Groupomania_1_mobile.png"
 import Groupomania_2_mobile from "../assets/projects/Groupomania_2_mobile.png"
 import Groupomania_3_mobile from "../assets/projects/Groupomania_3_mobile.png"
+import Kanap_0_desktop from "../assets/projects/Kanap_0_desktop.png"
+import Kanap_1_desktop from "../assets/projects/Kanap_1_desktop.png"
+import Kanap_2_desktop from "../assets/projects/Kanap_2_desktop.png"
+import Kanap_0_mobile from "../assets/projects/Kanap_0_mobile.png"
+import Kanap_1_mobile from "../assets/projects/Kanap_1_mobile.png"
+import Kanap_2_mobile from "../assets/projects/Kanap_2_mobile.png"
+import SpiritualAnimal_0_desktop from "../assets/projects/SpiritualAnimal_0_desktop.png"
+import SpiritualAnimal_1_desktop from "../assets/projects/SpiritualAnimal_1_desktop.png"
+import SpiritualAnimal_2_desktop from "../assets/projects/SpiritualAnimal_2_desktop.png"
 
 // logos images
 import htmlicon from "../assets/logos/htmlicon.png"
@@ -37,7 +45,7 @@ import reacticon from "../assets/logos/reacticon.png"
 import nextjsicon from "../assets/logos/nextjsicon.png"
 import nodejsicon from "../assets/logos/nodejsicon.png"
 import mongodbicon from "../assets/logos/mongodbicon.svg"
-import figmaicon from "../assets/logos/figmaicon.svg"
+import figmaicon from "../assets/logos/figmaicon.png"
 import sanityicon from "../assets/logos/sanityicon.png"
 
 
@@ -47,14 +55,14 @@ export const Projects = () => {
         {
             title: "Driving Blog",
             description: "A paid-access driving school blog where a teacher can edit and publish lessons-articles containing pictures, youtube videos and share with his students",
-            imgUrl: projImg1,
+            imgUrl: Coding,
             repoLink: 'https://github.com/DylanP97/alexandreblog',
             technologies: [reacticon, jsxicon, javascripticon, bootstrapicon, nodejsicon, mongodbicon, sassicon, figmaicon]
         },
         {
             title: "Travel Blog",
             description: "A travel blog made with Sanity.io for the backend and Next.js for the frontend",
-            imgUrl: projImg1,
+            imgUrl: Coding,
             repoLink: 'https://github.com/DylanP97/travel-blog',
             technologies: [javascripticon, nextjsicon, sanityicon]
         },
@@ -63,8 +71,8 @@ export const Projects = () => {
     const projectstab2 = [
         {
             title: "Groupomania",
-            description: "A company's own social media, I made the front and the API, with React, Mongo, Node, Express",
-            imgUrl: projImg2,
+            description: "A company's own social media, I made the front and the API, using React, Mongo, Node, Express",
+            imgUrl: OpenClassrooms,
             desktopImgs: [Groupomania_0_desktop, Groupomania_1_desktop, Groupomania_2_desktop, Groupomania_3_desktop],
             mobileImgs: [Groupomania_0_mobile, Groupomania_1_mobile, Groupomania_2_mobile, Groupomania_3_mobile],
             repoLink: 'https://github.com/DylanP97/groupomaniap7',
@@ -73,40 +81,34 @@ export const Projects = () => {
         {
             title: "Hot Takes",
             description: "This was a backend project where I had to make the API routes & server of an Angular app",
-            imgUrl: projImg2,
+            imgUrl: OpenClassrooms,
             repoLink: 'https://github.com/DylanP97/hottakesp6',
             technologies: [nodejsicon, javascripticon, mongodbicon]
         },
         {
             title: "Kanap",
-            description: "In this project I had to create the Javascript functionalities of a basic E-commerce website",
-            imgUrl: projImg2,
+            description: "I was in charge of creating all the Javascript functionnalities of this E-commerce website",
+            imgUrl: OpenClassrooms,
+            desktopImgs: [Kanap_0_desktop, Kanap_1_desktop, Kanap_2_desktop],
+            mobileImgs: [Kanap_0_mobile, Kanap_1_mobile, Kanap_2_mobile],
             repoLink: 'https://github.com/DylanP97/kanapp5',
             technologies: [htmlicon, cssicon, javascripticon]
         },
-        // {
-        //     title: "SEO Agency",
-        //     description: "Exercise to fix coding errors and enhances SEO, accessibility, loading speed of this agency's website by having 100 at Google's Lighthouse.",
-        //     imgUrl: projImg2,
-        //     repoLink: 'https://github.com/DylanP97/lagencepantherep4',
-        // },
         {
             title: "OhMyFood",
-            description: "Oh My Food is a fictitious restaurant reservation website. The goal was to build the website design with SASS and add animations following the briefing. The website is responsive and can be displayed on desktop, tablet and smartphone devices.",
-            imgUrl: projImg2,
-            imgDesktop: OhMyFood_desktop,
-            imgMobile: OhMyFood_mobile,
-            imgPage2Desktop: OhMyFood_menu_desktop,
-            imgPage2Mobile: OhMyFood_menu_mobile,
+            description: "I was in charge of creating a cool frontend using animations with Sass! Such as a loader when changing pages, a smooth fade-in of cards, a heart button that fills itself when clicking and a rotating check when selecting a dish.",
+            imgUrl: OpenClassrooms,
+            desktopImgs: [OhMyFood_desktop, OhMyFood_menu_desktop],
+            mobileImgs: [OhMyFood_mobile, OhMyFood_menu_mobile],
             repoLink: 'https://github.com/DylanP97/ohmyfoodp3',
             technologies: [htmlicon, cssicon, sassicon]
         },
         {
             title: "Booki",
             description: "Booki is a fictitious hotel reservation website. The website is responsive and can be displayed on desktop, tablet and smartphone devices. Simple Project using only HTML and CSS",
-            imgUrl: projImg2,
-            imgDesktop: Booki_desktop,
-            imgMobile: Booki_mobile,
+            imgUrl: OpenClassrooms,
+            desktopImgs: [Booki_0_desktop],
+            mobileImgs: [Booki_0_mobile],
             repoLink: 'https://github.com/DylanP97/bookip2',
             technologies: [htmlicon, cssicon]
         },
@@ -116,15 +118,15 @@ export const Projects = () => {
         {
             title: "Spiritual Animal",
             description: "This is a little quiz to find your spiritual animal in 4 questions made with JavaScript",
-            imgUrl: projImg3,
-            imgDesktop: [SpiritualAnimal_0_desktop, SpiritualAnimal_1_desktop, SpiritualAnimal_2_desktop],
+            imgUrl: JavaScript,
+            desktopImgs: [SpiritualAnimal_0_desktop, SpiritualAnimal_1_desktop, SpiritualAnimal_2_desktop],
             repoLink: 'https://github.com/DylanP97/spiritualanimal',
             technologies: [htmlicon, cssicon, javascripticon]
         },
         {
             title: "Example",
             description: "Example",
-            imgUrl: projImg3,
+            imgUrl: JavaScript,
             repoLink: 'https://github.com/DylanP97/example',
             technologies: [htmlicon, cssicon, javascripticon]
         },

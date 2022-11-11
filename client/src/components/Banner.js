@@ -11,7 +11,7 @@ export const Banner = () => {
     const toRotate = [ "web developer junior", "e-commerce entrepreneur", "online advertising adept"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100 - Math.random() * 100);
-    const period = 2000;
+    const period = 3000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -29,7 +29,7 @@ export const Banner = () => {
     setText(updatedText);
 
     if (isDeleting){
-        setDelta(prevDelta => prevDelta /2)
+        setDelta(prevDelta => prevDelta /3)
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -51,7 +51,7 @@ export const Banner = () => {
                         {({ isVisible }) => 
                         <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>                    
                             <span className='tagline'>Welcome to my Portfolio</span>
-                            <h1>{`Hi I'm Dylan `}<span className='wrap'></span></h1>
+                            <h1>{`Hi I'm Dylan `}<span className='wrap'>{text}</span></h1>
                             <p>Here's my portfolio website built with React framework, scroll down to discover my skills and some projects I did recently!</p>
                             <button onClick={() => (window.location.href="#contact")}>Let's connect <ArrowRightCircle size={25} /></button>
                         </div>}
