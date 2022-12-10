@@ -8,7 +8,7 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ ".", ".", "."];
+    const toRotate = [ "Full-Stack Junior Developper...", "E-Commerce & Advertising Adept..."];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100 - Math.random() * 100);
     const period = 3000;
@@ -49,10 +49,11 @@ export const Banner = () => {
                 <Col xs={12} md={6} xl={7}>
                     <TrackVisibility>
                         {({ isVisible }) => 
-                        <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>                    
+                        <div>                    
                             <span className='tagline'>Welcome to my Portfolio</span>
-                            <h1>{`Hi I'm Dylan `}<span className='wrap'>{text}</span></h1>
-                            <p>Here's my portfolio website built with React framework, scroll down to discover my skills and some projects I did recently!</p>
+                            <h1>{`Hi I'm Dylan `}<span className='wrap'>{ isVisible && text}</span></h1>
+                            <p>Here's my portfolio website built with React, scroll down to discover my skills and some projects I did.</p>
+                            <p>By the way this upper typing animation will stop once it isn't in your screen view.</p>
                             <button onClick={() => (window.location.href="#contact")}>Let's connect <ArrowRightCircle size={25} /></button>
                         </div>}
                     </TrackVisibility>

@@ -4,13 +4,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
-import e30 from "../assets/img/30file.svg";
-import e40 from "../assets/img/40file.svg";
-import e50 from "../assets/img/50file.svg";
-import e60 from "../assets/img/60file.svg";
-import e70 from "../assets/img/70file.svg";
-import e80 from "../assets/img/80file.svg";
-import e90 from "../assets/img/90file.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 
 // images technos
@@ -79,42 +72,42 @@ export const Skills = () => {
                                 <div className='image-box'>
                                     <img src={javascripticon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={70}/>
+                                <AnimatedBar className='rate' value={75}/>
                             </div>
                             <div className='item'>
                                 <h5>TypeScript</h5>
                                 <div className='image-box'>
                                     <img src={typescripticon} alt=""/>                                    
                                 </div>
-                                <AnimatedBar className='rate' value={40}/>
+                                <AnimatedBar className='rate' value={55}/>
                             </div>
                             <div className='item'>
                                 <h5>React.js</h5>
                                 <div className='image-box'>
                                     <img src={reacticon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={60}/>
+                                <AnimatedBar className='rate' value={70}/>
                             </div>
                             <div className='item'>
                                 <h5>Redux</h5>
                                 <div className='image-box'>
                                     <img src={reduxicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={60}/>
+                                <AnimatedBar className='rate' value={65}/>
                             </div>
                             <div className='item'>
                                 <h5>Next.js</h5>
                                 <div className='image-box'>
                                     <img src={nextjsiconb} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={40}/>
+                                <AnimatedBar className='rate' value={55}/>
                             </div>
                             <div className='item'>
                                 <h5>Vue.js</h5>
                                 <div className='image-box'>
                                     <img src={vuejsicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={30}/>
+                                <AnimatedBar className='rate' value={40}/>
                             </div>
 
                             <div className='item'>
@@ -122,32 +115,32 @@ export const Skills = () => {
                                 <div className='image-box'>
                                     <img src={phpicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={30}/>
+                                <AnimatedBar className='rate' value={60}/>
                             </div>
                             <div className='item'>
-                                <h5>SQL</h5>
+                                <h5>MySQL</h5>
                                 <div className='image-box'>
                                     <img src={mysqlicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={50}/>
+                                <AnimatedBar className='rate' value={70}/>
                             </div>
                         </Carousel>
                         <br/>
                         <br/>
-                        <Carousel autoPlaySpeed={800} autoPlay={true} responsive={responsive} infinite={true} className="skill-slider">
+                        <Carousel autoPlaySpeed={800} rtl={true} autoPlay={true} responsive={responsive} infinite={true} className="skill-slider">
                             <div className='item'>
                                 <h5>Node.js</h5>
                                 <div className='image-box'>
                                     <img src={nodejsicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={70}/>
+                                <AnimatedBar className='rate' value={80}/>
                             </div>
                             <div className='item'>
                                 <h5>Git / GitHub</h5>
                                 <div className='image-box'>
                                     <img src={giticon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={60}/>
+                                <AnimatedBar className='rate' value={70}/>
                             </div>
                             <div className='item'>
                                 <h5>Linux</h5>
@@ -161,28 +154,28 @@ export const Skills = () => {
                                 <div className='image-box'>
                                     <img src={dockericon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={40}/>
+                                <AnimatedBar className='rate' value={55}/>
                             </div>
                             <div className='item'>
                                 <h5>GraphQL</h5>
                                 <div className='image-box'>
                                     <img src={graphqlicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={40}/>
+                                <AnimatedBar className='rate' value={65}/>
                             </div>
                             <div className='item'>
                                 <h5>MongoDB</h5>
                                 <div className='image-box'>
                                     <img src={mongodbicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={80}/>
+                                <AnimatedBar className='rate' value={85}/>
                             </div>
                             <div className='item'>
                                 <h5>Sanity.io</h5>
                                 <div className='image-box'>
                                     <img src={sanityicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={60}/>
+                                <AnimatedBar className='rate' value={70}/>
                             </div>
                         </Carousel>
                         <br/>
@@ -200,49 +193,49 @@ export const Skills = () => {
                                 <div className='image-box'>
                                     <img src={sassicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={70}/>
+                                <AnimatedBar className='rate' value={75}/>
                             </div>
                             <div className='item'>
                                 <h5>Bootstrap</h5>
                                 <div className='image-box'>
                                     <img src={bootstrapicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={70}/>
+                                <AnimatedBar className='rate' value={75}/>
                             </div>
                             <div className='item'>
                                 <h5>Figma</h5>
                                 <div className='image-box'>
                                     <img src={figmaicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={60}/>
+                                <AnimatedBar className='rate' value={70}/>
                             </div>
                             <div className='item'>
                                 <h5>Shopify Liquid</h5>
                                 <div className='image-box'>
                                     <img src={liquidicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={70}/>
+                                <AnimatedBar className='rate' value={75}/>
                             </div>
                             <div className='item'>
                                 <h5>Shopify</h5>
                                 <div className='image-box'>
                                     <img src={shopifyicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={80}/>
+                                <AnimatedBar className='rate' value={95}/>
                             </div>
                             <div className='item'>
                                 <h5>Google Ads</h5>
                                 <div className='image-box'>
                                     <img src={googleadsicon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={80}/>
+                                <AnimatedBar className='rate' value={85}/>
                             </div>
                             <div className='item'>
                                 <h5>Illustrator</h5>
                                 <div className='image-box'>
                                     <img src={illustratoricon} alt=""/>
                                 </div>
-                                <AnimatedBar className='rate' value={70}/>
+                                <AnimatedBar className='rate' value={75}/>
                             </div>
                         </Carousel>
 

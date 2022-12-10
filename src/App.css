@@ -269,7 +269,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 260px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -388,7 +388,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 .skill-slider .item img {
-  width: 50%;
+  width:  30%;
 }
 .background-image-left {
   top: 28%;
@@ -406,10 +406,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .item{
-  height: 100%;
+  height: 70%;
 }
 .animated-bar {
-  margin: 0% 10% 10% 10%;
+  width: 60%;
+  margin: 10% auto;
 }
 .progress{
   --bs-progress-bar-bg: #4A2FBD !important;
@@ -514,6 +515,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+.imgbx-banner {
+  height: 100%;
+  object-fit: cover;
 }
 .proj-imgbx::before {
   content: "";
@@ -581,7 +588,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     opacity: 1;
   }
 }
-
+.video-showcase {
+  text-align: center;
+}
+.videoYTDesktop {
+  aspect-ratio: 16 / 9 ;
+  width: 50%;
+  margin: 0 auto;
+}
 
 
 /************ Modal PopUp ************/
@@ -670,11 +684,15 @@ body + .modal-styles{
 .modalimg-mobile img {
   width: 100%;
 }
+.headband {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .technologies{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 15px;
 }
 .switch-device{
   display: flex;
