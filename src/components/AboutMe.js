@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import astronautCool from "../assets/img/astronaut-cool.svg";
+import astronautCool from "../assets/img/space/astronaut-cool.svg";
 
 
 export const AboutMe = () => {
@@ -13,7 +13,7 @@ export const AboutMe = () => {
                     <p>I'm a very kind and funny person. I'm always eager to jump on new challenges, learn and discover new things!</p>
                 </Col>
                 <Col md={6} className="imgAstronaut">
-                    <img src={astronautCool} alt="SurfAstronaut"/>
+                    <img loading="lazy" src={astronautCool} alt="SurfAstronaut"/>
                 </Col>
             </Row>
         </Container>

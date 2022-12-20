@@ -6,7 +6,6 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { AboutMe } from './components/AboutMe';
 import ProgressBar from 'react-progressbar-on-scroll'
 
 function App() {
@@ -17,9 +16,9 @@ function App() {
       <div id='App' className="App">
         <NavBar/>
         <Banner/>
-        <Skills/>
         <Projects/>
-        <AboutMe/>
+        <Skills/>
+        {/* <AboutMe/> */}
         <Contact/>
         <Footer/>
       </div>

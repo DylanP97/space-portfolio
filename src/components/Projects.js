@@ -2,16 +2,14 @@ import React from 'react'
 import TrackVisibility from 'react-on-screen';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import colorSharp2 from "../assets/img/space/color-sharp2.png";
 
-// banner
+// project banner
 import airbnb from "../assets/img/airbnb.jpg";
 import illustration8 from "../assets/img/illustration-3.jpg";
-import cleaning from "../assets/img/cleaning.jpg";
 import social from "../assets/img/social.png";
 import retroviseur from "../assets/img/retroviseur.jpg";
 import rio from "../assets/img/rio.jpg";
-import frioul from "../assets/img/frioul.jpg";
 import citerouge from "../assets/img/citerouge.jpg";
 import kanap from "../assets/img/kanap.png";
 import tiger from "../assets/img/tiger.jpg";
@@ -30,110 +28,78 @@ import nodejsicon from "../assets/logos/nodejsicon.png"
 import mongodbicon from "../assets/logos/mongodbicon.svg"
 import figmaicon from "../assets/logos/figmaicon.png"
 import sanityicon from "../assets/logos/sanityicon.png"
+import typescripticon from "../assets/logos/typescripticon.png"
+import phpicon from "../assets/logos/phpicon.png"
+import mysqlicon from "../assets/logos/mysqlicon.png"
+import mapboxicon from "../assets/logos/mapboxglicon.png"
+import mapsicon from "../assets/logos/mapsicon.webp"
 
 
 export const Projects = () => {
 
-    const projectstab1 = [
+    const projects = [
         {
-            title: "Airbnb Clone",
-            description: "An Airbnb clone using Google Maps API with Sanity.io for the backend and Next.js for the frontend",
-            imgUrl: airbnb,
-            desktopVid: ``,
-            mobileVid: ``,
-            repoLink: 'https://github.com/DylanP97/alexandreblog',
-            technologies: [reacticon, jsxicon, javascripticon, bootstrapicon, nodejsicon, mongodbicon, sassicon, figmaicon]
-        },
-        {
-            title: "Japanese Restaurant",
-            description: "A food order website using PHP and MySQL",
+            title: "PHP SQL Restaurant",
+            description: "A japanese restaurant website using PHP and MySQL with a customer front and an admin interface for managing orders",
             imgUrl: illustration8,
             desktopVid: ``,
             mobileVid: ``,
-            repoLink: 'https://github.com/DylanP97/travel-blog',
-            technologies: []
+            technologies: [phpicon, mysqlicon]
         },
         {
-            title: "Driving Teacher Blog",
+            title: "MERN Driving blog",
             description: "A paid-access driving school blog where a teacher can edit and publish lessons-articles containing pictures, youtube videos and share with his students",
             imgUrl: retroviseur,
             desktopVid: ``,
             mobileVid: ``,
-            repoLink: 'https://github.com/DylanP97/alexandreblog',
             technologies: [reacticon, jsxicon, javascripticon, bootstrapicon, nodejsicon, mongodbicon, sassicon, figmaicon]
         },
         {
-            title: "Commercial Cleaning Site",
-            description: "A commercial cleaning company needed a simple website. I've built a single page website in a few hours using React.",
-            imgUrl: cleaning,
-            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/yfJr2jKQ9v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-            mobileVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/qSLNRSA33Zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-            website: 'http://proxima-multiservices.com/',
-            repoLink: 'https://github.com/DylanP97/proxima',
-            technologies: [reacticon, jsxicon]
-        },
-        {
-            title: "Travel Blog",
-            description: "A travel blog made with Sanity.io for the backend and Next.js for the frontend",
-            imgUrl: rio,
-            desktopVid: ``,
-            mobileVid: ``,
-            repoLink: 'https://github.com/DylanP97/travel-blog',
-            technologies: [javascripticon, nextjsicon, sanityicon]
-        },
-        {
-            title: "Groupomania",
+            title: "MERN Social Media",
             description: "A company's own social media, I made the front and the API, using React, Mongo, Node, Express",
             imgUrl: social,
             desktopVid: ``,
             mobileVid: ``,
-            repoLink: 'https://github.com/DylanP97/groupomaniap7',
             technologies: [reacticon, jsxicon, javascripticon, nodejsicon, mongodbicon, sassicon]
         },
         {
-            title: "Kanap",
-            description: "I was in charge of creating all the Javascript functionnalities of this E-commerce website",
-            imgUrl: kanap,
+            title: "NextJS Airbnb",
+            description: "An Airbnb clone using Google Maps API with Sanity.io for the backend and Next.js for the frontend",
+            imgUrl: airbnb,
             desktopVid: ``,
             mobileVid: ``,
-            repoLink: 'https://github.com/DylanP97/kanapp5',
-            technologies: [htmlicon, cssicon, javascripticon]
+            technologies: [javascripticon, nextjsicon, sanityicon, mapsicon]
         },
         {
-            title: "OhMyFood",
-            description: "I was in charge of creating a cool frontend using animations with Sass! Such as a loader when changing pages, a smooth fade-in of cards, a heart button that fills itself when clicking and a rotating check when selecting a dish.",
-            imgUrl: citerouge,
+            title: "NextJS Travel blog",
+            description: "A travel blog made with Sanity.io for the backend and Next.js for the frontend",
+            imgUrl: rio,
             desktopVid: ``,
             mobileVid: ``,
-            repoLink: 'https://github.com/DylanP97/ohmyfoodp3',
-            technologies: [htmlicon, cssicon, sassicon]
+            technologies: [javascripticon, nextjsicon, sanityicon, mapboxicon]
         },
         {
-            title: "Booki",
-            description: "Booki is a fictitious hotel reservation website. The website is responsive and can be displayed on desktop, tablet and smartphone devices. Simple Project using only HTML and CSS",
-            imgUrl: frioul,
-            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/TmwQO8ADt4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-            mobileVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/N0tJqazG-FA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-            repoLink: 'https://github.com/DylanP97/bookip2',
-            technologies: [htmlicon, cssicon]
-        },
-        {
-            title: "Spiritual Animal",
-            description: "This is a little quiz to find your spiritual animal in 4 questions made with JavaScript",
-            imgUrl: tiger,
-            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/A2OCqGQISKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-            mobileVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/VoeQalEKAjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-            repoLink: 'https://github.com/DylanP97/spiritualanimal',
-            technologies: [htmlicon, cssicon, javascripticon]
-        },
-        {
-            title: "Hangman with TypeScript",
+            title: "TypeScript hangman",
             description: "This is a React Hangman game, made using TypeScript",
             imgUrl: hangman,
             desktopVid: ``,
             mobileVid: ``,
-            repoLink: 'https://github.com/DylanP97/example',
+            technologies: [typescripticon, reacticon]
+        },
+        {
+            title: "Javascript quiz",
+            description: "This is a little quiz to find your spiritual animal in 4 questions made with JavaScript",
+            imgUrl: tiger,
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/A2OCqGQISKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            mobileVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/VoeQalEKAjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
             technologies: [htmlicon, cssicon, javascripticon]
+        },
+        {
+            title: "Sass animations",
+            description: "I was in charge of creating a cool frontend using animations with Sass! Such as a loader when changing pages, a smooth fade-in of cards, a heart button that fills itself when clicking and a rotating check when selecting a dish.",
+            imgUrl: citerouge,
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/2241zjH76bI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            technologies: [htmlicon, cssicon, sassicon]
         },
     ];
     
@@ -152,7 +118,7 @@ export const Projects = () => {
                     </TrackVisibility>
                     <Container>
                         <Row>
-                            {projectstab1.map((project, index) => {
+                            {projects.map((project, index) => {
                                 return (
                                     <ProjectCard
                                         key={index}
