@@ -9,9 +9,8 @@ import airbnb from "../assets/img/airbnb.jpg";
 import illustration8 from "../assets/img/illustration-3.jpg";
 import social from "../assets/img/social.png";
 import retroviseur from "../assets/img/retroviseur.jpg";
-import rio from "../assets/img/rio.jpg";
+import travel from "../assets/img/travel.jpg";
 import citerouge from "../assets/img/citerouge.jpg";
-import kanap from "../assets/img/kanap.png";
 import tiger from "../assets/img/tiger.jpg";
 import hangman from "../assets/img/download.png";
 
@@ -33,6 +32,7 @@ import phpicon from "../assets/logos/phpicon.png"
 import mysqlicon from "../assets/logos/mysqlicon.png"
 import mapboxicon from "../assets/logos/mapboxglicon.png"
 import mapsicon from "../assets/logos/mapsicon.webp"
+import vitejsicon from "../assets/logos/vitejsicon.svg"
 
 
 export const Projects = () => {
@@ -43,7 +43,6 @@ export const Projects = () => {
             description: "A japanese restaurant website using PHP and MySQL with a customer front and an admin interface for managing orders",
             imgUrl: illustration8,
             desktopVid: ``,
-            mobileVid: ``,
             technologies: [phpicon, mysqlicon]
         },
         {
@@ -51,7 +50,6 @@ export const Projects = () => {
             description: "A paid-access driving school blog where a teacher can edit and publish lessons-articles containing pictures, youtube videos and share with his students",
             imgUrl: retroviseur,
             desktopVid: ``,
-            mobileVid: ``,
             technologies: [reacticon, jsxicon, javascripticon, bootstrapicon, nodejsicon, mongodbicon, sassicon, figmaicon]
         },
         {
@@ -59,39 +57,34 @@ export const Projects = () => {
             description: "A company's own social media, I made the front and the API, using React, Mongo, Node, Express",
             imgUrl: social,
             desktopVid: ``,
-            mobileVid: ``,
             technologies: [reacticon, jsxicon, javascripticon, nodejsicon, mongodbicon, sassicon]
         },
         {
             title: "NextJS Airbnb",
-            description: "An Airbnb clone using Google Maps API with Sanity.io for the backend and Next.js for the frontend",
+            description: "An Airbnb clone using Google Maps API with Sanity.io for the backend and Next.js for the frontend. This project was interesting to get to know the Google Maps API, styling the map itself, the markers, and passing price data through them. Also styling a fixed navbar so it can let only the left side to scroll down in the grid of propreties",
             imgUrl: airbnb,
-            desktopVid: ``,
-            mobileVid: ``,
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/TsejaJZ75Uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
             technologies: [javascripticon, nextjsicon, sanityicon, mapsicon]
         },
         {
             title: "NextJS Travel blog",
-            description: "A travel blog made with Sanity.io for the backend and Next.js for the frontend",
-            imgUrl: rio,
-            desktopVid: ``,
-            mobileVid: ``,
+            description: "A travel blog made with Sanity.io for the backend and Next.js for the frontend. In the sanity desk the API of Google Maps is used but in my frontend app I use MapboxGL to display the map at the bottom of the article. Sanity is a really interesting tool to easily create and use the content of a database by coding schemas. NextJS is also great given its ability to handle static site generationa or server side rendering",
+            imgUrl: travel,
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/ED-P-3xXIs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
             technologies: [javascripticon, nextjsicon, sanityicon, mapboxicon]
         },
         {
             title: "TypeScript hangman",
-            description: "This is a React Hangman game, made using TypeScript",
+            description: "This is a hangman game made using TypeScript, React and Vite JS. This is a first project for me to learn about TS.",
             imgUrl: hangman,
-            desktopVid: ``,
-            mobileVid: ``,
-            technologies: [typescripticon, reacticon]
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/qfZA2dnfhvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            technologies: [typescripticon, reacticon, vitejsicon]
         },
         {
             title: "Javascript quiz",
-            description: "This is a little quiz to find your spiritual animal in 4 questions made with JavaScript",
+            description: "This is a little quiz to find your spiritual animal in 4 questions. I made it using simple JS. There are 16 possible answers.",
             imgUrl: tiger,
             desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/A2OCqGQISKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-            mobileVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/VoeQalEKAjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
             technologies: [htmlicon, cssicon, javascripticon]
         },
         {
