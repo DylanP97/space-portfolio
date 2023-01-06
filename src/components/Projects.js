@@ -13,6 +13,7 @@ import travel from "../assets/img/travel.jpg";
 import citerouge from "../assets/img/citerouge.jpg";
 import tiger from "../assets/img/tiger.jpg";
 import hangman from "../assets/img/download.png";
+import weather from "../assets/img/weather.webp";
 
 // logos images
 import htmlicon from "../assets/logos/htmlicon.png"
@@ -25,7 +26,6 @@ import reacticon from "../assets/logos/reacticon.png"
 import nextjsicon from "../assets/logos/nextjsicon.png"
 import nodejsicon from "../assets/logos/nodejsicon.png"
 import mongodbicon from "../assets/logos/mongodbicon.svg"
-import figmaicon from "../assets/logos/figmaicon.png"
 import sanityicon from "../assets/logos/sanityicon.png"
 import typescripticon from "../assets/logos/typescripticon.png"
 import phpicon from "../assets/logos/phpicon.png"
@@ -39,17 +39,17 @@ export const Projects = () => {
 
     const projects = [
         {
-            title: "PHP SQL Restaurant",
-            description: "A japanese restaurant website using PHP and MySQL with a customer front and an admin interface for managing orders",
+            title: "PHP MySQL Simple restaurant website",
+            description: "A japanese restaurant website using PHP and MySQL with a customer front-end website, where teh customers can order their food. And an admin interface for managing admins, categories, menus and orders.",
             imgUrl: illustration8,
             desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/MfBjQn0dXRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
             technologies: [phpicon, mysqlicon]
         },
         {
             title: "MERN Driving blog",
-            description: "A paid-access driving school blog where a teacher can edit and publish lessons-articles containing pictures, youtube videos and share with his students",
+            description: "A MERN driving school blog where a teacher can edit and publish lessons-articles containing pictures, youtube videos and share with his students. The modifications in the editor are auto-saved in the server. The admin can manage his articles visibility and students access directly in the application interface.",
             imgUrl: retroviseur,
-            desktopVid: ``,
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/4oPubxlP2Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             technologies: [reacticon, jsxicon, bootstrapicon, nodejsicon, mongodbicon, sassicon]
         },
         {
@@ -81,6 +81,13 @@ export const Projects = () => {
             technologies: [typescripticon, reacticon, vitejsicon]
         },
         {
+            title: "Meteo App with Vite",
+            description: "This is simple meteo application done with Vite and using the API of OpenMeteo. I take the data from today's weather, the week and the hours which I sliced to only the next 24 hours, so it doesn't render a long page. The app requires that the visitor allow the geolocation, so it can give the weather following is longitude, lattitude and timezone. I also made the weather code render GIFS weather icons",
+            imgUrl: weather,
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/XNd4FyEUg80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            technologies: [cssicon, javascripticon, vitejsicon]
+        },
+        {
             title: "Javascript quiz",
             description: "This is a little quiz to find your spiritual animal in 4 questions. I made it using simple JS. There are 16 possible answers.",
             imgUrl: tiger,
@@ -106,7 +113,7 @@ export const Projects = () => {
                         {({ isVisible }) => 
                         <div className={isVisible ? 'animate__animated animate__bounce' : ''}>                    
                             <h2>Projects</h2>
-                            <p>Below are coding projects I worked on and helped me grow in my developper journey. (Currently working on adding the projects to this section)</p>
+                            <p>Below are coding projects I worked on and helped me learn.</p>
                         </div>}
                     </TrackVisibility>
                     <Container>

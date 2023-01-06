@@ -15,6 +15,7 @@ import reacticon from "../assets/logos/reacticon.png"
 import reduxicon from "../assets/logos/reduxicon.png"
 import sanityicon from "../assets/logos/sanityicon.png"
 import nextjsiconb from "../assets/logos/nextjsiconb.png"
+import vitejsicon from "../assets/logos/vitejsicon.svg"
 import mysqlicon from "../assets/logos/mysqlicon.png"
 import giticon from "../assets/logos/giticon.png"
 import phpicon from "../assets/logos/phpicon.png"
@@ -26,11 +27,10 @@ import figmaicon from "../assets/logos/figmaicon.png"
 import linuxicon from "../assets/logos/linuxicon.png"
 import graphqlicon from "../assets/logos/graphqlicon.png"
 import dockericon from "../assets/logos/dockericon.png"
-import vuejsicon from "../assets/logos/vuejsicon.png"
 import googleadsicon from "../assets/logos/googleadsicon.png"
 import illustratoricon from "../assets/logos/illustratoricon.png"
 import materialuiicon from "../assets/logos/materialuiicon.png"
-
+import socketioicon from "../assets/logos/socketicon.png"
 
 export const Skills = () => {
     const responsive = {
@@ -71,42 +71,36 @@ export const Skills = () => {
                                 <div className='image-box'>
                                     <img loading="lazy" src={javascripticon} alt=""/>
                                 </div>
-                                {/* <AnimatedBar className='rate' value={75}/> */}
                             </div>
                             <div className='item'>
                                 <h5>TypeScript</h5>
                                 <div className='image-box'>
                                     <img src={typescripticon} alt=""/>                                    
                                 </div>
-                                {/* <AnimatedBar className='rate' value={55}/> */}
                             </div>
                             <div className='item'>
                                 <h5>React.js</h5>
                                 <div className='image-box'>
                                     <img src={reacticon} alt=""/>
                                 </div>
-                                {/* <AnimatedBar className='rate' value={70}/> */}
                             </div>
                             <div className='item'>
                                 <h5>Redux</h5>
                                 <div className='image-box'>
                                     <img src={reduxicon} alt=""/>
                                 </div>
-                                {/* <AnimatedBar className='rate' value={65}/> */}
                             </div>
                             <div className='item'>
                                 <h5>Next.js</h5>
                                 <div className='image-box'>
                                     <img src={nextjsiconb} alt=""/>
                                 </div>
-                                {/* <AnimatedBar className='rate' value={55}/> */}
                             </div>
                             <div className='item'>
-                                <h5>Vue.js</h5>
+                                <h5>Vite.js</h5>
                                 <div className='image-box'>
-                                    <img src={vuejsicon} alt=""/>
+                                    <img src={vitejsicon} alt=""/>
                                 </div>
-                                {/* <AnimatedBar className='rate' value={40}/> */}
                             </div>
 
                             <div className='item'>
@@ -114,14 +108,12 @@ export const Skills = () => {
                                 <div className='image-box'>
                                     <img src={phpicon} alt=""/>
                                 </div>
-                                {/* <AnimatedBar className='rate' value={60}/> */}
                             </div>
                             <div className='item'>
                                 <h5>MySQL</h5>
                                 <div className='image-box'>
                                     <img src={mysqlicon} alt=""/>
                                 </div>
-                                {/* <AnimatedBar className='rate' value={70}/> */}
                             </div>
                         </Carousel>
                         <br/>
@@ -172,6 +164,13 @@ export const Skills = () => {
                                 <h5>Sanity.io</h5>
                                 <div className='image-box'>
                                     <img src={sanityicon} alt=""/>
+                                </div>
+                                {/* <AnimatedBar className='rate' value={70}/> */}
+                            </div>
+                            <div className='item'>
+                                <h5>Socket.io</h5>
+                                <div className='image-box'>
+                                    <img src={socketioicon} alt=""/>
                                 </div>
                                 {/* <AnimatedBar className='rate' value={70}/> */}
                             </div>
