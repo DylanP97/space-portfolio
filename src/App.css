@@ -699,8 +699,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Modal PopUp ************/
 .modal-dialog {
-  max-width: 90% !important;
-  width: 90%;
+  max-width: 97% !important;
+  width: 97%;
+  border: 0px;
+  padding-left: 0px !important;
+}
+.modal-dialog-scrollable {
+  padding-left: 0px !important;
 }
 @media (min-width: 576px){
   .layout-second-container {
@@ -715,6 +720,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .modal-content {
   background: linear-gradient(90.21deg, var(--secondary) -5.91%, var(--primary) 111.58%) !important;
+  border: 0px !important;
 }
 .btn-close {
   color: #fff !important; 

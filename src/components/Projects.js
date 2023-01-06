@@ -42,7 +42,7 @@ export const Projects = () => {
             title: "PHP SQL Restaurant",
             description: "A japanese restaurant website using PHP and MySQL with a customer front and an admin interface for managing orders",
             imgUrl: illustration8,
-            desktopVid: ``,
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/MfBjQn0dXRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
             technologies: [phpicon, mysqlicon]
         },
         {
@@ -50,13 +50,13 @@ export const Projects = () => {
             description: "A paid-access driving school blog where a teacher can edit and publish lessons-articles containing pictures, youtube videos and share with his students",
             imgUrl: retroviseur,
             desktopVid: ``,
-            technologies: [reacticon, jsxicon, javascripticon, bootstrapicon, nodejsicon, mongodbicon, sassicon, figmaicon]
+            technologies: [reacticon, jsxicon, bootstrapicon, nodejsicon, mongodbicon, sassicon]
         },
         {
             title: "MERN Social Media",
-            description: "A company's own social media, I made the front and the API, using React, Mongo, Node, Express",
+            description: "A company's own social media, I made the front and the API, using React, Mongo, Node, Express. The user should signup with an email address related to the company. A user can view and comment all posts as well as creating new ones and delete his own posts. The user with an admin level can edit and delete every posts. The app is responsive and works nicely on smartphones.",
             imgUrl: social,
-            desktopVid: ``,
+            desktopVid: `<iframe className="videoYTDesktop" src="https://www.youtube.com/embed/LDsw6tyIauI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
             technologies: [reacticon, jsxicon, javascripticon, nodejsicon, mongodbicon, sassicon]
         },
         {
